@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practice animation</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .progress{
+            height: 4px;
+            background-color: red;
+            animation: loading 2s ease-in-out infinite alternate-reverse;
+        }
+        @keyframes loading {
+            0%{
+                width: 10vw;
+            }
+            70%{
+                width: 50vw;
+            }
+            100%{
+                width: 100vw;
+            }
+        }
+        header{
+            background-color: gray;
+            height: 100px;
+        
+        }
+        main{
+            background-color: aqua;
+            height: 400px;
+        }
+        /* img{
+            animation: rotate 2s ease-in-out infinite ;
+        } */
+        /* @keyframes rotate {
+            0%{
+                transform: rotate(0deg);
+            }
+            100%{
+                transform: rotate(360deg);
+            }
+        }
+        .slider{
+            height: 200px;
+            background: rgb(202, 120, 120);
+        } */
+        .slider{
+            height: 200px;
+            /* width: 200px; */
+            overflow: hidden;
+            margin: auto;
+            display: flex;
+            justify-content: center;
+        }
+        img{
+            display: block;
+            margin: auto;
+        }
+        .photo{
+            transform: translate(-8vw);
+            animation: slider1 2s forwards infinite;
+
+        }
+        .photo1{
+            transform: translate(0vw);
+            animation: slider2 2s forwards infinite;
+        }
+        .photo2{
+            transform: translate(8vw);
+        }
+        @keyframes slider1 {
+            0%{
+                transform: translate(-8vw);
+            }
+            100%{
+                transform: translate(85vw);
+            }
+        }
+         @keyframes slider2 {
+            0%{
+                transform: translate(0vw);
+            }
+            100%{
+                transform: translate(92vw);
+            }
+        } 
+        
+
+
+        
+    </style>
+</head>
+<body>
+    <div class="progress"></div>
+    <header></header>
+    <main>
+        <!-- <img src="dragon.png" alt="dragon" height="200px" width="200px"> -->
+        <div class="slider">
+            <img class="photo" src="https://images.pexels.com/photos/14051972/pexels-photo-14051972.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+            <img class="photo1" src="https://images.pexels.com/photos/9130779/pexels-photo-9130779.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+            <img class="photo2" src="https://images.pexels.com/photos/19598115/pexels-photo-19598115/free-photo-of-women-painting-on-easels.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+           
+        </div>
+    </main>
+
+</body>
+</html>

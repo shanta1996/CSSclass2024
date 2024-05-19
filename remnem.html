@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rem and em</title>
+    <style>
+        html{
+            font-size: 20px;
+        }
+        .desc{
+            font-size: 2rem;
+            margin-top: 2rem;
+        }
+        /* pseudo class selector */
+        .desc:hover{
+            color: red;
+        }
+        /* pseudo class selector */
+        .desc::first-line{
+            color: blue;
+        }
+        .desc::selection{
+            color: rgb(194, 76, 125);
+        }
+        .desc::first-letter{
+            color: aqua;
+            font-size: 2rem ;
+        }
+        .desc::before{
+            content: url('https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExdjBoeXlobnlzMXk1djNzZTV3cXY4dTRzajV5YnRzdjdqejhrb3FnOCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/xTiTnet7xRv1GPTShi/giphy.gif');
+ 
+            /* content: '<<';
+            border: 10px solid red; */
+        }
+        /* .desc::after{
+            content:url('https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExaHVicnA4MDhsZTNwbWxtaXNxcmEwc3VmanBtbmtweWk3MHl0d3FzZCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/gZEBpuOkPuydi/giphy.gif') ;
+        } */
+        div{
+            height: 300px;
+            width: 300px;
+            margin: auto;
+        }
+        div img{
+            height: 100%;
+            width: 100%;
+            /* filter: grayscale(1); */
+            /* filter: blur(5px); */
+            /* filter: brightness(150%); */
+            /* filter: contrast(200%); */
+            /* filter: drop-shadow(10px 10px 12px rgb(75, 71, 71)); */
+            /* filter: hue-rotate(45deg); */
+            /* filter: invert(100%); */
+            /* filter: opacity(70%); */
+            /* filter: saturate(500%); */
+            /* filter: sepia(100%); */
+            filter: brightness(100%) contrast(200%) drop-shadow(10px 10px 12px rgb(75, 71, 71));
+        }
+    </style>
+</head>
+<body>
+    <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut nisi illum blanditiis accusantium architecto quod aperiam ut, quas quia, autem ex illo deserunt facere perferendis adipisci laborum. Facere, velit optio.</p>
+    <div>
+        <img src="https://images.pexels.com/photos/20296871/pexels-photo-20296871.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="ladder">
+    </div>
+</body>
+</html>

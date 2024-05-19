@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transform css</title>
+    <style>
+        .container{
+            background: red;
+            height: 200px;
+        }
+        .item{
+            border: 4px solid black;
+            /* transform: translate(50px); */
+            /* transform: translate(40px,40px) rotate(0.15turn); */
+            /* transform-origin: 0; */
+            /* transform: scale(3); */
+            /* transform: skew(25deg,5deg); */
+            /* transform: rotateZ(45deg); */
+            /* transform-origin: 0; */
+            transition: 2s ease-in-out linear;
+        
+
+         }
+        /* .item:hover{
+            width: 100px;
+        } */
+        img{
+            height: 100px;
+            width: 100px;
+            /* transition: 3s ease linear; */
+
+        }
+        .item:hover img{
+            height: 60px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">
+            <img src="https://images.pexels.com/photos/13024626/pexels-photo-13024626.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="car">
+        </div>
+    </div>
+</body>
+</html>

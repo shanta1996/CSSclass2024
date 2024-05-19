@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            /* background-color: rgb(11, 87, 90); */
+
+            display: flex;
+            flex-wrap: wrap;
+            /* justify-content: space-around; */
+            /* justify-content: space-between; */
+            justify-content: space-evenly;
+        }
+        .container > .content{
+            height: 30vh;
+            width: 200px;
+            background-color:greenyellow ;
+            margin: 10px;
+            display: flex;
+            /* justify-content:flex-end; */
+            /* justify-content: start; */
+            justify-content: center;
+            /* align-items: end; */
+            /* align-items: baseline; */
+            align-items: center;
+            overflow: hidden;
+        }
+        .content .box{
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            background-color: red;
+            border: 6px black dotted;
+            /* margin-top: 30px; */
+        }
+        .demo{
+            /* box-shadow: 8px 8px 12px green; */
+            /* box-shadow: 8px 8px 12px hsl(120, 34%, 45%); */
+            box-shadow: -10px 10px 20px rgba(12, 27, 15, 0.66);
+        }
+        .container .demo{
+            background-color: rgb(93, 46, 202);
+            box-shadow: 0 0 10px rgba(226, 9, 9, 0.66);
+            padding: 5px;
+            overflow: hidden;
+        }
+        .container .class1{
+            background-color: #ffff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.6);
+        }
+        .demo img{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            transition: all 2s ;
+        }
+        .content img{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            transition: all 1s;
+        }
+        .demo:hover img{
+            transform: scale(1.4);
+        }
+        .content:hover img{
+            transform: scale(1.5);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="content"> 
+            <div class="box"></div>
+        </div>
+        <div class="content">
+            <div class="class"></div>
+        </div>
+        <div class="content demo">
+            <img src="https://images.pexels.com/photos/13008754/pexels-photo-13008754.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="flower">
+        </div>
+        <div class="content">
+            <div class="demo1"></div>
+        </div>
+        <div class="content class1"></div>
+        <div class="content">
+            <img src="https://images.pexels.com/photos/19892685/pexels-photo-19892685/free-photo-of-a-small-owl-sitting-on-a-branch-in-the-trees.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="owl">
+        </div>
+        <div class="content"></div>
+        <div class="content"></div>
+        <div class="content"></div>
+    </div>
+</body>
+</html>

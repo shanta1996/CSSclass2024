@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>align content</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            height: 80vh;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            background-color: aqua;
+            /* align-content: space-around; */
+            /* align-content: space-between; */
+            align-content: space-evenly;
+
+        }
+        .container .demo-box{
+            height: 35vh;
+            width: 23%;
+            background-color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="demo-box"></div>
+        <div class="demo-box"></div>
+        <div class="demo-box"></div>
+        <div class="demo-box"></div>
+        <div class="demo-box"></div>
+        <div class="demo-box"></div>
+        <div class="demo-box"></div>
+        <div class="demo-box"></div>
+    </div>
+</body>
+</html>

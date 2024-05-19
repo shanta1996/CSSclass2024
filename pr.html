@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            background-color: rgb(28, 117, 117);
+            display: flex;
+            flex-wrap: wrap;
+            /* justify-content: space-between; */
+            /* justify-content: space-around; */
+            justify-content: space-evenly;
+            /* justify-content: space-between; */
+            margin-top: 10px; 
+
+        }
+        .container .content{
+            height: 30vh;
+            width: 300px;
+            background-color: rgb(151, 161, 151);
+            margin-top: 20px;
+            margin-top: 10px;
+            display: flex;
+            /* justify-content: flex-end; */
+            /* justify-content: flex-start; */
+            justify-content: center;
+            /* align-items: flex-end; */
+            /* align-items: flex-start; */
+            align-items: center;
+            overflow: hidden;
+
+        }
+        /* .content img{
+            height: 100%;
+            width: 100%;  
+        } */
+        .content > .box{
+            height: 100px;
+            width: 100px;
+            background-color: orangered;
+            border-radius: 50%;
+            border:  5px inset rgb(231, 124, 124);
+            animation:updown 3s ease-in-out infinite alternate-reverse ;
+        }
+        @keyframes updown{
+            0%{
+                /* transform: translateY(-10px); */
+                transform: scaleX(20deg);
+            }
+            100%{
+                /* transform: translateY(100px); */
+                transform: skewX(45deg);
+            }
+        }
+        .round{
+            height: 100px;
+            width: 100px;
+            background-color: blue;
+        }
+        .container .demo{
+            /* box-shadow: -10px 10px 10px rgb(54, 17, 155) ; */
+            background-color: #ffff;
+            box-shadow: 0 0 10px greenyellow;
+            padding: 5px;
+            overflow: hidden;
+        }
+        .demo img{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            transition: all 2s;
+
+        }
+        .content img{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            transition: all 1s;
+        }
+        .demo:hover img{
+            transform: scale(0.5);
+            /* transform: scale(-1.5); */
+        }
+        .content:hover img{
+            /* transform: scale(0.6); */
+            /* transform: scaleX(1.5); */
+            transform: scaleY(1.5);
+        }
+        .demo1:hover{
+            /* transform: translateY(-10px); */
+            /* transform: translateX(20px); */
+            transform: translateY(10px);
+
+        }
+        .demo2{
+            /* transform: skewY(10deg); */
+            /* transform: skewX(10deg); */
+            /* transform: skew(10deg,10deg); */
+            transform: rotate(5deg);
+            
+        }
+        .demo3{
+            transform: rotate(40deg);
+        }
+        .content > .box1{
+            height: 200px;
+            width: 200px;
+            background-color: rebeccapurple;
+            border-radius: 50%;
+            border-top: 15px palevioletred dotted;
+            border-bottom: 15px palevioletred solid;
+            animation: spin 3s infinite linear;
+        }
+        @keyframes spin{
+            0%{
+                transform: rotate(0deg);
+            }
+            100%{
+                transform: rotate(360deg);
+            }
+        } 
+        .content .round{
+            height: 200px;
+            width: 200px;
+            background-color: rgb(163, 161, 161);
+            border-radius: 50%;
+            border-top: 20px solid lawngreen;
+            border-bottom: 20px dashed lawngreen;
+            animation: spn 3s ease-in-out infinite reverse;
+        }
+        @keyframes spn {
+            30%{
+                transform: rotate(45deg);
+            }
+            70%{
+                transform: rotate(360deg);
+            }
+            
+        }
+    </style>
+</head>
+<body>
+     <div class="container">
+        <div class="content">
+                <img src="https://images.pexels.com/photos/20448164/pexels-photo-20448164/free-photo-of-a-woman-in-a-floral-dress-holding-flowers-on-a-dirt-road.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="girl">
+            
+        </div>
+        <div class="content">
+            <div class="box"></div>
+        </div>
+        <div class="content">
+            <div class="round"></div>
+        </div>
+        <div class="content demo">
+            <img src="https://images.pexels.com/photos/20392251/pexels-photo-20392251/free-photo-of-a-brown-butterfly-sitting-on-a-leaf-with-green-leaves.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="nature">
+        </div>
+        <div class="content demo1">
+        </div>
+        <div class="content demo2">
+        </div>
+        <div class="content ">
+            <img src="https://images.pexels.com/photos/13963443/pexels-photo-13963443.jpeg" alt="">
+        </div>
+        <div class="content demo3"></div>
+        <div class="content">
+            <div class="box1"></div>
+        </div>
+     </div>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            background-color: blue;
+        }
+        .box{
+            background-color: green;
+            height: 250px;
+            width: 250px;
+            position: relative;
+            animation-name: shanta;
+            animation-duration: 2s;
+            animation-iteration-count: 3;
+
+        }
+        @keyframes shanta {
+            from{
+                width: 200px;
+
+            }
+            to{
+                width: 400px;
+
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">this is a box</div>
+    </div>
+</body>
+</html>

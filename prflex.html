@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practice flex</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            display: flex;
+            /* flex-direction: row-reverse; */
+            /* flex-direction: column; */
+            flex-wrap: wrap;
+            /* flex-wrap: wrap-reverse; */
+            justify-content: center;
+            height: 65vh;
+            background: aquamarine;
+            align-items: center;
+
+            /* align-content: center; */
+            /* align-content: flex-end; */
+
+        }
+        .box1{
+            height: 100px;
+            width: 100px;
+            background: red;
+            border: solid 4px black;
+        }
+        .box2{
+            height: 100px;
+            width: 100px;
+            background: rgb(34, 195, 19);
+            border: solid 4px black;
+            order: 10;
+            /* align-self: flex-end; */
+            flex-grow: 5;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box2">box2</div>
+        <div class="box1">box1</div>
+        <div class="box1">box3</div>
+        <div class="box1">box4</div>
+        <div class="box1">box5</div>
+        <div class="box1">box6</div>
+        <div class="box1">box7</div>
+        <div class="box1">box8</div>
+        <div class="box1">box9</div>
+        <div class="box1">box10</div>
+    </div>
+</body>
+

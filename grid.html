@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid css</title>
+    <style>
+        .container{
+            height: 50vh;
+            background-color: yellowgreen;
+            display: grid;
+            /* grid-template-columns: auto auto auto auto; */
+            grid-template-rows: 56px 50px;
+            grid-template-columns: 60px 60px;
+            /* justify-content: space-around; */
+            /* justify-content: space-between; */
+            /* justify-content: space-evenly; */
+            /* align-content: center; */
+            /* align-items: center; */
+            
+        
+        }
+        .item{
+            background-color: rosybrown;
+            border: 2px solid red;
+
+        }
+        .container1{
+            background-color: rgb(87, 13, 172);
+            /* height: 100vh; */
+        }
+        @media screen and  (max-width:800px){
+            body{
+                background-color: yellow;
+            }
+        }
+        @media screen and (max-width:700px) {
+            body{
+                background-color: brown;
+            }
+        }
+        @media screen and (max-width:500px) {
+            body{
+                background-color: blue;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">shanta</div>
+        <div class="item">shyam</div>
+        <div class="item">ram</div>
+        <div class="item">sharan</div>
+    </div>
+    <div class="container1">
+        <div class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores dolorem debitis esse ut, fugit sunt quis eum aliquam ratione mollitia dolores fugiat repellendus nesciunt totam nisi odio, eos eaque at.</div>
+    </div>
+</body>
+</html>

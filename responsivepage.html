@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>responsine page : media query</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            background-color: rgb(27, 31, 31);
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            padding: 5px;
+
+
+        }
+        .container .box{
+            height: 250px;
+            width: 23%;
+            background-color: rgb(149, 236, 91);
+        }
+        .box h1{
+            font-size: 3rem;
+        }
+        @media screen and (max-width:912px) {
+            .container .box{
+                width:48%;
+                margin-top: 10px;
+            }
+        }
+        @media screen and (max-width:700px) {
+            .container .box{
+                width:99%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <h1>Hello</h1>
+        </div>
+        <div class="box">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident esse, omnis quaerat labore repellat accusantium vel reprehenderit, unde ad dignissimos, corporis nemo accusamus. Ullam accusamus itaque rerum, inventore architecto cum.
+        </div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+</html>

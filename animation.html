@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation</title>
+    <style>
+        .container{
+            height: 400px;
+            width: 400px;
+            background-color: rgb(197, 219, 238);
+            justify-content: center;
+            display: flex;
+            /* animation: rotate 2s ease-in-out infinite; */
+        }
+        .box{
+            height: 200px;
+            width: 200px;
+            margin: 45px;
+
+            border-top: red 20px dotted;
+            border-right: yellow 20px dotted;
+            border-bottom: green 20px dotted;
+            border-left: black 20px dotted;
+            border-radius: 50%;
+            /* transform: translate(-20%); */
+            animation: rotate 3s infinite linear;
+
+        }
+       
+    @keyframes rotate{
+        0%{
+            transform:rotate(0deg); 
+        }
+        100%{
+            transform:rotate(360deg);
+        }
+        /* 0%{
+            transform: translate(-20%) rotate(0deg);
+        }
+        100%{
+            transform: translate(-20%) rotate(360deg);
+        } */
+       
+
+        /* from{
+            transform: rotate(0deg);
+        }
+        to{
+            transform: rotate(360deg);
+        } */
+
+    }
+
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="box"></div>
+    
+</div>
+</body>
+</html>

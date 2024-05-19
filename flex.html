@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            /* background-color: #232f3e; */
+            display: flex;
+            flex-wrap: wrap;
+            /* justify-content: space-between; */
+            /* justify-content: space-evenly; */
+            justify-content: space-around;
+        }
+        /* descendant selector */
+        .container .content{
+            height: 30vh;
+            width: 300px;
+            background-color: rgb(44,55,230);
+            margin-top: 10px;
+            display: flex;
+            /* justify-content: flex-end; */
+            /* justify-content: flex-start; */
+            justify-content: center;
+            /* align-items: flex-end; */
+            align-items: center;
+
+        }
+        .content >.box{
+            height: 110px;
+            width: 110px;
+            /* background-color: orangered; */
+            border-bottom: 10px dotted rgba(250, 9, 9, 0.55);
+            border-top:  10px dotted rgba(252, 42, 27, 0.55);
+            border-left:  10px solid rgba(66, 241, 81, 0.44);
+            border-right: solid 10px rgba(56, 241, 39, 0.66);
+
+            border-radius: 50%;
+            /* animation: updown 3s ease-in-out infinite alternate-reverse; */
+            animation: rotate 3s infinite linear;
+        }
+        @keyframes rotate{
+            0%{
+                transform: translate(20%) rotate(0deg)
+            }
+            100%{
+                transform: translate(20%) rotate(360deg);
+            }
+        }
+        /* @keyframes updown{
+            0%{
+                transform: translateX(-10px);
+                transform: rotate(45deg);
+            }
+            100%{
+                /* transform: translateX(10px); */
+                /* transform: rotate(90deg); */
+            /* } */ */
+        /* } */
+        /* @keyframes rotate {
+            from{
+                transform:rotate(0deg)
+            }
+            toL{
+                transform: rotate(30deg);
+            }
+        } */
+    
+            
+
+        
+        
+        .content .app{
+            height: 100px;
+            width: 100px;
+            background-color: red;
+            border-radius: 50%;
+        }
+       /* @keyframes shanta{
+        0%{
+            transform: rotate(45deg)
+        }
+        100%{
+            transform: rotate(180deg);
+        } */
+       /* } */
+       
+       
+            
+        
+       .container .demo{
+            /* box-shadow: -8px -8px 12px rgba(0,0,0,0.9);-8px -8px 12px rgba(0,0,0,0.9); */
+            background-color: #ffff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.9);
+            padding: 10px;
+
+        }
+        .container .demo{
+            background-color: #daff;
+            box-shadow: 10px 20px 15px rgba(10,20,30,0.6);
+            padding: 5px;
+            overflow: hidden;
+
+        }
+        .demo img{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            transition: all 3s;
+        }
+        .demo:hover img{
+            /* transform:scale(1.5); */
+
+            transform: scale(0.22);
+            /* -webkit-transform: scale(-1);
+            background-color: transparent;
+            height: 300px;
+            width: 200px;
+            border: 1px solid #f1f1f1;
+            perspective: 1000px; */
+        }
+        .demo1{
+            transition: all 2s ease-in-out infinite;
+        }
+        .demo1:hover{
+            /* transform: translate(-10px); 
+            */
+            /* transform: translateX(10px); */
+            /* transform: translateZ(10px); */
+            /* transition: 2s; */
+            transform: rotate(45deg);
+        }
+        .demo2{
+            /* transform: skewY(4deg); */
+            /* transform: skewX(4deg); */
+            transform: skew(4deg,5deg);
+            transform: rotate(13deg);
+
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <div class="box"></div>
+        </div>
+        <div class="content">
+            <div class="app"></div>
+        </div>
+        <div class="content">
+        </div>
+        <div class="content demo">
+            <img src="https://images.pexels.com/photos/20332518/pexels-photo-20332518/free-photo-of-a-cat-with-blue-eyes-looking-at-the-camera.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="cat">
+        </div>
+        <div class="content demo1">
+
+        </div>
+        <div class="content demo2"></div>
+        <div class="content"></div>
+        <div class="content"></div>
+    </div>
+</body>
+</html>

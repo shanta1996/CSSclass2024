@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>selector</title>
+    <style>
+        /* global variable */
+        :root{
+            --redcolor:red;
+            --orangecolor:orange
+        }
+        *{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        h1{
+            /* color:orange; */
+            color:var(--redcolor);
+
+            /* background-color: blue; */
+            background-color: var(--orangecolor);
+            font-size: 50px;
+        }
+        .title{
+            background-color: green;
+            text-align: center;
+        }
+        .test{
+            color:red
+        }
+        #demo{
+            font-family: Arial, Helvetica, sans-serif;
+            color:orangered
+        }
+        
+        #xyz{
+            color:orange;
+            background-color:dodgerblue;
+        }
+        .abc{
+            color:white;
+            background-color: green;
+        }
+        .title,.demo,#xyz,#demo{
+            font-size: 40px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <!-- internal css -->
+    <h1 class="title">this is an element selector</h1>
+    <h2 class="title test">this is a class selector</h2>
+    <h2 id="demo">this is a id selector</h2>
+    <p class="abc" id="xyz">this is a paragraph</p>
+</body>
+</html>
